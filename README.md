@@ -28,7 +28,7 @@ This is the backend for a web app, built with **Node.js**, **Express**, and **Mo
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/your-username/your-backend.git
+git clone git remote add origin https://github.com/tejucoaj14/error-find-be.git
 cd your-backend
 
 
