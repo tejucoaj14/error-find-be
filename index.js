@@ -6,13 +6,14 @@ require("dotenv").config();
 
 const app = express();
 const PORT = 5000;
+const URI = process.env.MONGO_URI;
 
 // Middleware
 app.use(cors());
 app.use(express.json());
 
 // MongoDB connection
-mongoose.connect('mongodb://localhost:27017/cambridge', {
+mongoose.connect(`${URI}/cambridge`, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 }).then(() => {
